@@ -1,3 +1,16 @@
+terraform {
+  required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "~> 3.0"
+    }
+  }
+}
+
+provider "azurerm" {
+  features = {}
+}
+
 resource "azurerm_storage_account" "example" {
   name                     = "mystorageaccount"
   resource_group_name      = "karuna-cea"
