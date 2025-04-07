@@ -12,7 +12,7 @@ variable "features" {
 }
 
 resource "azurerm_storage_account" "example" {
-  name                     = "mystorageaccount"
+  name                     = "karunamystorageaccount"
   resource_group_name      = "karuna-cea"
   location                 = "West Europe"
   account_tier             = "Standard"
