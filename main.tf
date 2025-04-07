@@ -6,6 +6,14 @@ terraform {
     }
   }
 }
+variable "features" {
+  type = any
+  default = {}
+}
+
+provider "azurerm" {
+  features = var.features
+}
 
 resource "azurerm_storage_account" "example" {
   name                     = "mystorageaccount"
